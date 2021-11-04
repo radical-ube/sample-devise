@@ -19,6 +19,9 @@ gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
+gem 'active_storage_validations', '~> 0.8.9'
+gem 'image_processing', '~> 1.9.3'
+gem 'mini_magick', '~> 4.9.5'
 gem 'bcrypt', '~> 3.1.13'
 gem 'faker', '~> 2.11.0'
 gem 'will_paginate', '~> 3.3.0'
@@ -64,6 +67,7 @@ end
 
 group :production do
   gem 'pg', '1.2.3'
+  gem 'aws-sdk-s3', '1.87.0', require: false
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
